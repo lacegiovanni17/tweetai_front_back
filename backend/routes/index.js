@@ -1,6 +1,6 @@
 import express from 'express';
 import rateLimit from 'express-rate-limit';
-import { createAutobot, getAutobots, getAutobotById, getAutobotPosts, getPostComments, getAllAutobots } from '../controllers/autobotController.js';
+import { createAutobot, getAutobots, getAutobotById, getAutobotPosts, getPostComments, getAllAutobots, deleteAllAutobots } from '../controllers/autobotController.js';
 
 const router = express.Router();
 
@@ -27,5 +27,8 @@ router.get('/posts/:postId/comments', limiter, getPostComments);
 
 // Route to manually trigger the creation of Autobots
 router.post('/create-autobots', createAutobot);
+
+// Route to delete all Autobots, Posts, and Comments
+router.delete('/autobots/delete-all', limiter, deleteAllAutobots);
 
 export default router;
