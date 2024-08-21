@@ -13,7 +13,7 @@ const limiter = rateLimit({
 // Route to get all Autobots without pagination
 router.get('/autobots/all', limiter, getAllAutobots);
 
-// Route to get Autobots with pagination
+// Route to get Autobots with paginationgva
 router.get('/autobots', limiter, getAutobots);
 
 // Route to get a specific Autobot by ID
