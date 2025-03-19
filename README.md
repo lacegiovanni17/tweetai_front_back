@@ -7,7 +7,7 @@ The TweetAI API provides endpoints to manage and retrieve Autobots, their posts,
 
 
 
-## About
+## About 
 * 👋 Hi, I’m Chidike Henry
 * 😎 I’m a fullstack developer
 * 💻 This is TweetAI API, which I built to manage and retrieve Autobots, their posts, and comments.
@@ -22,6 +22,22 @@ database optimization, and API design, as well as my ability to integrate third-
 Additionally, It is assessing my capability to enforce rate limiting and data uniqueness constraints, ensuring robust and secure API usage. 
 My approach to collaboration and problem-solving in delivering a complete solution, including a real-time UI, is also being evaluated. 
 This task aims to gauge my overall proficiency in full-stack development and my ability to meet real-world software engineering challenges.
+
+## The Task
+So, you are to create a service for that platform that does this:
+
+* Program a background process that automatically creates 500 new unique Autobots every hour in a background.
+* Each Autobot should have 10 new posts also created for them upon their (the Autobot's) creation
+* Each new post should have 10 new comments
+* Use jsonplaceholder.typicode.com to generate the Autobots(Users), Post and Comments.
+* Make sure no 2 Autobots have the same Post title
+* Create a UI that shows the current count of the number of Autobots created in real-time.
+* Create an API endpoint that allows developers to pull:
+  (a)Autobots
+  (b)An Autobot’s posts
+  (c)And post comments
+* Make sure no developer can make more than 5 requests per minute and each request can
+only return 10 data results per request
 
 ## Technologies Used
 * NodeJS
